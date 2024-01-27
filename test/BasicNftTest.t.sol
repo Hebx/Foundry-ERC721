@@ -17,7 +17,7 @@ contract BasicNftTest is Test {
         basicNft = deployer.run();
     }
 
-    function testNameIsCorrect() public {
+    function testNameIsCorrect() public view {
         string memory expectedName = "Dogie";
         string memory actualName = basicNft.name();
         // compare hashes instead of for looping through content of the array ( bytes32 )
