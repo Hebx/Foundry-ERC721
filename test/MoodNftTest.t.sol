@@ -7,8 +7,6 @@ import {Test, console} from "forge-std/Test.sol";
 contract MoodNftTest is Test {
     MoodNft public moodNft;
 
-    // DeployMoodNft public deployer;
-
     function setUp() public {
         moodNft = new MoodNft(HAPPY_MOOD_URI, SAD_MOOD_URI);
     }
